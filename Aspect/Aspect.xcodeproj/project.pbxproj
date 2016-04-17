@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB95FFAB1CC10E96009830D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95FFAA1CC10E96009830D8 /* AppDelegate.swift */; };
+		FB95FFAD1CC10E96009830D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB95FFAC1CC10E96009830D8 /* Assets.xcassets */; };
+		FB95FFB01CC10E96009830D8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB95FFAE1CC10E96009830D8 /* MainMenu.xib */; };
+		FB95FFB91CC10ED5009830D8 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95FFB71CC10ED5009830D8 /* MainWindowController.swift */; };
+		FB95FFBA1CC10ED5009830D8 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB95FFB81CC10ED5009830D8 /* MainWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB95FFA71CC10E96009830D8 /* Aspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB95FFAA1CC10E96009830D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB95FFAC1CC10E96009830D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB95FFAF1CC10E96009830D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FB95FFB11CC10E96009830D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB95FFB71CC10ED5009830D8 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainWindowController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB95FFB81CC10ED5009830D8 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB95FFA41CC10E96009830D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB95FF9E1CC10E95009830D8 = {
+			isa = PBXGroup;
+			children = (
+				FB95FFA91CC10E96009830D8 /* Aspect */,
+				FB95FFA81CC10E96009830D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB95FFA81CC10E96009830D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB95FFA71CC10E96009830D8 /* Aspect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB95FFA91CC10E96009830D8 /* Aspect */ = {
+			isa = PBXGroup;
+			children = (
+				FB95FFAA1CC10E96009830D8 /* AppDelegate.swift */,
+				FB95FFAC1CC10E96009830D8 /* Assets.xcassets */,
+				FB95FFAE1CC10E96009830D8 /* MainMenu.xib */,
+				FB95FFB11CC10E96009830D8 /* Info.plist */,
+				FB95FFB71CC10ED5009830D8 /* MainWindowController.swift */,
+				FB95FFB81CC10ED5009830D8 /* MainWindowController.xib */,
+			);
+			path = Aspect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB95FFA61CC10E96009830D8 /* Aspect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB95FFB41CC10E96009830D8 /* Build configuration list for PBXNativeTarget "Aspect" */;
+			buildPhases = (
+				FB95FFA31CC10E96009830D8 /* Sources */,
+				FB95FFA41CC10E96009830D8 /* Frameworks */,
+				FB95FFA51CC10E96009830D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aspect;
+			productName = Aspect;
+			productReference = FB95FFA71CC10E96009830D8 /* Aspect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB95FF9F1CC10E95009830D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Vest;
+				TargetAttributes = {
+					FB95FFA61CC10E96009830D8 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FB95FFA21CC10E95009830D8 /* Build configuration list for PBXProject "Aspect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB95FF9E1CC10E95009830D8;
+			productRefGroup = FB95FFA81CC10E96009830D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB95FFA61CC10E96009830D8 /* Aspect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB95FFA51CC10E96009830D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB95FFAD1CC10E96009830D8 /* Assets.xcassets in Resources */,
+				FB95FFBA1CC10ED5009830D8 /* MainWindowController.xib in Resources */,
+				FB95FFB01CC10E96009830D8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB95FFA31CC10E96009830D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB95FFB91CC10ED5009830D8 /* MainWindowController.swift in Sources */,
+				FB95FFAB1CC10E96009830D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB95FFAE1CC10E96009830D8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB95FFAF1CC10E96009830D8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB95FFB21CC10E96009830D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB95FFB31CC10E96009830D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FB95FFB51CC10E96009830D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Aspect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Aspect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB95FFB61CC10E96009830D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Aspect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Aspect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB95FFA21CC10E95009830D8 /* Build configuration list for PBXProject "Aspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB95FFB21CC10E96009830D8 /* Debug */,
+				FB95FFB31CC10E96009830D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB95FFB41CC10E96009830D8 /* Build configuration list for PBXNativeTarget "Aspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB95FFB51CC10E96009830D8 /* Debug */,
+				FB95FFB61CC10E96009830D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB95FF9F1CC10E95009830D8 /* Project object */;
+}

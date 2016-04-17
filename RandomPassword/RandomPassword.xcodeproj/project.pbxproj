@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB8658D31CB45D7B00C7E2E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8658D21CB45D7B00C7E2E1 /* AppDelegate.swift */; };
+		FB8658D51CB45D7B00C7E2E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8658D41CB45D7B00C7E2E1 /* Assets.xcassets */; };
+		FB8658E11CB4628200C7E2E1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8658DF1CB4628200C7E2E1 /* MainWindowController.swift */; };
+		FB8658E21CB4628200C7E2E1 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8658E01CB4628200C7E2E1 /* MainWindowController.xib */; };
+		FB8658E41CB6922000C7E2E1 /* GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8658E31CB6922000C7E2E1 /* GeneratePassword.swift */; };
+		FB8658E81CB6A82C00C7E2E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8658E71CB6A82C00C7E2E1 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB8658CF1CB45D7B00C7E2E1 /* RandomPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8658D21CB45D7B00C7E2E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB8658D41CB45D7B00C7E2E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB8658D91CB45D7C00C7E2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8658DF1CB4628200C7E2E1 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainWindowController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB8658E01CB4628200C7E2E1 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		FB8658E31CB6922000C7E2E1 /* GeneratePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GeneratePassword.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB8658E71CB6A82C00C7E2E1 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB8658CC1CB45D7B00C7E2E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB8658C61CB45D7B00C7E2E1 = {
+			isa = PBXGroup;
+			children = (
+				FB8658D11CB45D7B00C7E2E1 /* RandomPassword */,
+				FB8658D01CB45D7B00C7E2E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB8658D01CB45D7B00C7E2E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB8658CF1CB45D7B00C7E2E1 /* RandomPassword.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB8658D11CB45D7B00C7E2E1 /* RandomPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FB8658D21CB45D7B00C7E2E1 /* AppDelegate.swift */,
+				FB8658D41CB45D7B00C7E2E1 /* Assets.xcassets */,
+				FB8658E01CB4628200C7E2E1 /* MainWindowController.xib */,
+				FB8658E71CB6A82C00C7E2E1 /* MainMenu.xib */,
+				FB8658DF1CB4628200C7E2E1 /* MainWindowController.swift */,
+				FB8658D91CB45D7C00C7E2E1 /* Info.plist */,
+				FB8658E31CB6922000C7E2E1 /* GeneratePassword.swift */,
+			);
+			path = RandomPassword;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB8658CE1CB45D7B00C7E2E1 /* RandomPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8658DC1CB45D7C00C7E2E1 /* Build configuration list for PBXNativeTarget "RandomPassword" */;
+			buildPhases = (
+				FB8658CB1CB45D7B00C7E2E1 /* Sources */,
+				FB8658CC1CB45D7B00C7E2E1 /* Frameworks */,
+				FB8658CD1CB45D7B00C7E2E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomPassword;
+			productName = RandomPassword;
+			productReference = FB8658CF1CB45D7B00C7E2E1 /* RandomPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB8658C71CB45D7B00C7E2E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Vest;
+				TargetAttributes = {
+					FB8658CE1CB45D7B00C7E2E1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FB8658CA1CB45D7B00C7E2E1 /* Build configuration list for PBXProject "RandomPassword" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB8658C61CB45D7B00C7E2E1;
+			productRefGroup = FB8658D01CB45D7B00C7E2E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB8658CE1CB45D7B00C7E2E1 /* RandomPassword */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB8658CD1CB45D7B00C7E2E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8658D51CB45D7B00C7E2E1 /* Assets.xcassets in Resources */,
+				FB8658E21CB4628200C7E2E1 /* MainWindowController.xib in Resources */,
+				FB8658E81CB6A82C00C7E2E1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB8658CB1CB45D7B00C7E2E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8658E11CB4628200C7E2E1 /* MainWindowController.swift in Sources */,
+				FB8658E41CB6922000C7E2E1 /* GeneratePassword.swift in Sources */,
+				FB8658D31CB45D7B00C7E2E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB8658DA1CB45D7C00C7E2E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB8658DB1CB45D7C00C7E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FB8658DD1CB45D7C00C7E2E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RandomPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RandomPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB8658DE1CB45D7C00C7E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RandomPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RandomPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB8658CA1CB45D7B00C7E2E1 /* Build configuration list for PBXProject "RandomPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8658DA1CB45D7C00C7E2E1 /* Debug */,
+				FB8658DB1CB45D7C00C7E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB8658DC1CB45D7C00C7E2E1 /* Build configuration list for PBXNativeTarget "RandomPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8658DD1CB45D7C00C7E2E1 /* Debug */,
+				FB8658DE1CB45D7C00C7E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB8658C71CB45D7B00C7E2E1 /* Project object */;
+}
