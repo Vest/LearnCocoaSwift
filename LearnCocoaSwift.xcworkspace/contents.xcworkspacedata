@@ -16,4 +16,7 @@
    <FileRef
       location = "group:SpeakLine/SpeakLine.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ToDo/ToDo.xcodeproj">
+   </FileRef>
 </Workspace>
