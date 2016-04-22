@@ -41,6 +41,21 @@ class MainWindowController: NSWindowController, NSTableViewDataSource {
         tableView.reloadData()
     }
     
+    @IBAction func debugAction(sender: NSButton) {
+        print("Generate ToDo's")
+        
+        let todos: [String] = ["Eat", "Sleep",
+                               "Code", "Play SC2",
+                               "Troll", "Sleep again"]
+        
+        for _ in 0..<5 {
+            let todo = todos[Int(arc4random_uniform(UInt32(todos.count)))]
+            createNewItemWithName(todo)
+        }
+        
+        tableView.reloadData()
+    }
+    
     func createNewItemWithName(item: String) {
        items.append(item)
     }
