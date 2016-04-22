@@ -14,7 +14,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+        <window title="ToDo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="386" height="270"/>
@@ -75,7 +75,7 @@
                                                     <subviews>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwD-71-Emf">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
-                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="WYa-Tq-6o3">
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="WYa-Tq-6o3">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -83,6 +83,9 @@
                                                                     <binding destination="Wop-e5-Ihm" name="value" keyPath="objectValue" id="dRp-op-1AN"/>
                                                                 </connections>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <action selector="onEnterInTextField:" target="-2" id="Zz2-uB-CpL"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -94,6 +97,7 @@
                                     </tableColumns>
                                     <connections>
                                         <outlet property="dataSource" destination="-2" id="NRn-J0-7nL"/>
+                                        <outlet property="delegate" destination="-2" id="xHa-YU-0bC"/>
                                     </connections>
                                 </tableView>
                             </subviews>
@@ -115,6 +119,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <action selector="addToDo:" target="-2" id="xfM-gt-2iq"/>
+                        </connections>
                     </textField>
                 </subviews>
             </view>

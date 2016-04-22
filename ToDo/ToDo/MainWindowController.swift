@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainWindowController: NSWindowController, NSTableViewDataSource {
+class MainWindowController: NSWindowController, NSTableViewDataSource, NSTableViewDelegate {
 
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var tableView: NSTableView!
@@ -23,20 +23,14 @@ class MainWindowController: NSWindowController, NSTableViewDataSource {
         return "MainWindowController"
     }
     
-    @IBAction func addToDo(sender: NSButton) {
+    @IBAction func addToDo(sender: AnyObject) {
         let todo = textField.stringValue
         
-        if todo.isEmpty {
+        if  !createNewItemWithName(todo) {
             textField.becomeFirstResponder()
-            
-            print("ToDo is empty")
             return
         }
         textField.stringValue = ""
-        
-        print("Add todo: \(todo)")
-        
-        createNewItemWithName(todo)
         
         tableView.reloadData()
     }
@@ -56,8 +50,15 @@ class MainWindowController: NSWindowController, NSTableViewDataSource {
         tableView.reloadData()
     }
     
-    func createNewItemWithName(item: String) {
-       items.append(item)
+    func createNewItemWithName(item: String) -> Bool {
+        if item.isEmpty {
+            print("ToDo item is empty")
+            return false
+        }
+        
+        items.append(item)
+        
+        return true
     }
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
@@ -66,5 +67,19 @@ class MainWindowController: NSWindowController, NSTableViewDataSource {
     
     func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
         return items[row]
+    }
+    
+    @IBAction func onEnterInTextField(sender: NSTextField) {
+        let newTodo = sender.stringValue
+        
+        print("Edit todo. New value \(newTodo)")
+        
+        if !newTodo.isEmpty {
+            items[tableView.selectedRow] = newTodo
+        } else {
+            print("New ToDo item is empty. Refresh tableView")
+            
+            tableView.reloadData()
+        }
     }
 }
