@@ -21,12 +21,20 @@ class MainWindowController: NSWindowController {
     }
     
     @IBAction func makeWarmer(sender: NSButton) {
-        let newTemperature = temperature + 1
-        setValue(newTemperature, forKey: "temperature")
+        // let newTemperature = temperature + 1
+        // setValue(newTemperature, forKey: "temperature")
+    
+        willChangeValueForKey("temperature")
+        temperature += 1
+        didChangeValueForKey("temperature")
     }
     
     @IBAction func makeCooler(sender: NSButton) {
-        let newTemperature = temperature - 1
-        setValue(newTemperature, forKey: "temperature")
+        // let newTemperature = temperature - 1
+        // setValue(newTemperature, forKey: "temperature")
+  
+        willChangeValueForKey("temperature")
+        temperature -= 1
+        didChangeValueForKey("temperature")
     }
 }
