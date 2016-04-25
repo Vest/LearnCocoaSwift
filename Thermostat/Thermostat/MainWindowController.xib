@@ -25,6 +25,7 @@
                         <rect key="frame" x="18" y="17" width="21" height="235"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="Bmj-Mt-iaB"/>
                         <connections>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="lja-99-N77"/>
                             <binding destination="-2" name="value" keyPath="temperature" id="Ipy-RF-3Yd"/>
                         </connections>
                     </slider>
@@ -36,6 +37,7 @@
                         </buttonCell>
                         <connections>
                             <action selector="makeWarmer:" target="-2" id="oQp-jJ-8Zb"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="CVk-Cr-hm1"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzU-6k-We5">
@@ -45,7 +47,8 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="makeCooler:" target="-2" id="8nx-Id-oG3"/>
+                            <action selector="makeCooler:" target="-2" id="Iov-af-cxf"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="5Vy-M8-OJ1"/>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuF-oE-eip">
@@ -56,9 +59,20 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
-                            <binding destination="-2" name="value" keyPath="temperature" id="HVr-BH-Jgq"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="NQk-iM-hbF"/>
+                            <binding destination="-2" name="value" keyPath="temperature" id="8NP-t3-naG"/>
                         </connections>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AhX-Nt-6cL">
+                        <rect key="frame" x="139" y="26" width="81" height="19"/>
+                        <buttonCell key="cell" type="recessed" title="Power" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q3c-bp-ImU">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="systemBold" size="12"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="isOn" id="Ptf-Su-mqS"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>
