@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:kvc.playground">
+   </FileRef>
+   <FileRef
       location = "group:RandomPassword/RandomPassword.xcodeproj">
    </FileRef>
    <FileRef
@@ -18,5 +21,8 @@
    </FileRef>
    <FileRef
       location = "group:ToDo/ToDo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Thermostat/Thermostat.xcodeproj">
    </FileRef>
 </Workspace>
