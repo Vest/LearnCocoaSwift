@@ -10,8 +10,18 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
 
-    // var temperature = 68
-    dynamic var temperature = 68
+    private var privateTemperature = 68
+    dynamic var temperature: Int {
+        set {
+            print("set temperature to \(newValue)")
+            privateTemperature = newValue
+        }
+        get {
+            print("get temperature")
+            return privateTemperature
+        }
+    }
+    
     dynamic var isOn = true
     
     override var windowNibName: String? {
@@ -38,5 +48,14 @@ class MainWindowController: NSWindowController {
         // willChangeValueForKey("temperature")
         temperature -= 1
         // didChangeValueForKey("temperature")
+    }
+    
+    override func setNilValueForKey(key: String) {
+        switch key {
+        case "temperature":
+            temperature = 68
+        default:
+            super.setNilValueForKey(key)
+        }
     }
 }

@@ -7,7 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="Thermostat" customModuleProvider="target">
             <connections>
-                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="qXF-PS-zgY"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -75,9 +75,6 @@
                     </button>
                 </subviews>
             </view>
-            <connections>
-                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
-            </connections>
             <point key="canvasLocation" x="17" y="467"/>
         </window>
     </objects>
