@@ -35,3 +35,17 @@ selectedPerson.spouse = Person()
 selectedPerson.spouse?.scooter = scooter
 
 let modelName = selectedPerson.valueForKeyPath("spouse.scooter.modelName") as! String
+
+class Observer: NSObject {
+    dynamic var temp = 1;
+    
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        print("Somebody has changed \(keyPath) of \(object), value \(change), context: \(context)")
+    }
+}
+
+var observer = Observer()
+observer.addObserver(observer, forKeyPath: "temp", options: NSKeyValueObservingOptions.Old, context: nil);
+
+observer.temp = 2;
+observer.temp = 3;
