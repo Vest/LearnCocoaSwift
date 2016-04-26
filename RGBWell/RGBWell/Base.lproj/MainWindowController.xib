@@ -7,10 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RGBWell" customModuleProvider="target">
             <connections>
-                <outlet property="bSlider" destination="x7b-ew-RtB" id="nbp-rj-ZRf"/>
                 <outlet property="colorWell" destination="TkX-ba-cAL" id="Wp0-uI-qv9"/>
-                <outlet property="gSlider" destination="C2N-da-t71" id="Av1-ps-UGg"/>
-                <outlet property="rSlider" destination="mzx-o8-BYD" id="xtV-0y-LkI"/>
                 <outlet property="window" destination="BNt-9J-JR7" id="fkb-iQ-hlR"/>
             </connections>
         </customObject>
@@ -30,6 +27,7 @@
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="Hny-sr-do7"/>
                         <connections>
                             <action selector="adjustRed:" target="-2" id="H6F-jt-Q5O"/>
+                            <binding destination="-2" name="value" keyPath="r" id="8zn-Os-fKi"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-gD-c2I">
@@ -45,6 +43,7 @@
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="FWb-Mu-thw"/>
                         <connections>
                             <action selector="adjustGreen:" target="-2" id="nnk-rD-9ti"/>
+                            <binding destination="-2" name="value" keyPath="g" id="3wt-K2-lde"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVb-fF-JNr">
@@ -60,6 +59,7 @@
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="RMd-QQ-A56"/>
                         <connections>
                             <action selector="adjustBlue:" target="-2" id="XB2-4Q-bI1"/>
+                            <binding destination="-2" name="value" keyPath="b" id="uKd-3E-o7Q"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-ga-Gja">
@@ -73,6 +73,9 @@
                     <colorWell fixedFrame="YES" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkX-ba-cAL">
                         <rect key="frame" x="0.0" y="0.0" width="319" height="270"/>
                         <color key="color" red="1" green="0.35517489397332846" blue="0.70271509545770217" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="color" id="Qdf-zE-W0s"/>
+                        </connections>
                     </colorWell>
                 </subviews>
             </view>
