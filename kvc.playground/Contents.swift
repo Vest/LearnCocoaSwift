@@ -22,6 +22,19 @@ s.valueForKey("gradeLevel")
 class Person: NSObject {
     var spouse: Person? = nil
     var scooter: Scooter? = nil
+    
+    dynamic var firstName = ""
+    dynamic var lastName = ""
+    
+    dynamic var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
+    
+    class func keyPathsForValuesAffectingFullName() -> NSSet {
+        print("Somebody has called me")
+        
+        return Set(["firstName", "lastName"])
+    }
 }
 
 class Scooter: NSObject {
@@ -49,3 +62,10 @@ observer.addObserver(observer, forKeyPath: "temp", options: NSKeyValueObservingO
 
 observer.temp = 2;
 observer.temp = 3;
+
+var person = Person()
+person.firstName = "Vest"
+person.lastName = "Master"
+person.fullName
+
+
