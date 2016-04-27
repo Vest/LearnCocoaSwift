@@ -25,4 +25,7 @@
    <FileRef
       location = "group:Thermostat/Thermostat.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:RaiseMan/RaiseMan.xcodeproj">
+   </FileRef>
 </Workspace>
