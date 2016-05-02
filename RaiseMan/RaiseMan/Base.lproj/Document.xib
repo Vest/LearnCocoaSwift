@@ -100,7 +100,11 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="VRy-cv-a6K" name="value" keyPath="objectValue.raise" id="m3S-ZK-uW8"/>
+                                                                <binding destination="VRy-cv-a6K" name="value" keyPath="objectValue.raise" id="k91-kb-HYS">
+                                                                    <dictionary key="options">
+                                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                                    </dictionary>
+                                                                </binding>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
