@@ -28,4 +28,7 @@
    <FileRef
       location = "group:RaiseMan/RaiseMan.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CarLot/CarLot.xcodeproj">
+   </FileRef>
 </Workspace>

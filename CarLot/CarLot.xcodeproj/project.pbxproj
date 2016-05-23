@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBE5D29C1CF3569C00459691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5D29B1CF3569C00459691 /* AppDelegate.swift */; };
+		FBE5D29E1CF3569C00459691 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5D29D1CF3569C00459691 /* Document.swift */; };
+		FBE5D2A11CF3569C00459691 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE5D29F1CF3569C00459691 /* Document.xib */; };
+		FBE5D2A41CF3569C00459691 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE5D2A21CF3569C00459691 /* Document.xcdatamodeld */; };
+		FBE5D2A61CF3569C00459691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE5D2A51CF3569C00459691 /* Assets.xcassets */; };
+		FBE5D2A91CF3569C00459691 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE5D2A71CF3569C00459691 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBE5D2981CF3569C00459691 /* CarLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE5D29B1CF3569C00459691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBE5D29D1CF3569C00459691 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		FBE5D2A01CF3569C00459691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		FBE5D2A31CF3569C00459691 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		FBE5D2A51CF3569C00459691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBE5D2A81CF3569C00459691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FBE5D2AA1CF3569C00459691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBE5D2951CF3569C00459691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBE5D28F1CF3569C00459691 = {
+			isa = PBXGroup;
+			children = (
+				FBE5D29A1CF3569C00459691 /* CarLot */,
+				FBE5D2991CF3569C00459691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBE5D2991CF3569C00459691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5D2981CF3569C00459691 /* CarLot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE5D29A1CF3569C00459691 /* CarLot */ = {
+			isa = PBXGroup;
+			children = (
+				FBE5D29B1CF3569C00459691 /* AppDelegate.swift */,
+				FBE5D29D1CF3569C00459691 /* Document.swift */,
+				FBE5D29F1CF3569C00459691 /* Document.xib */,
+				FBE5D2A51CF3569C00459691 /* Assets.xcassets */,
+				FBE5D2A71CF3569C00459691 /* MainMenu.xib */,
+				FBE5D2AA1CF3569C00459691 /* Info.plist */,
+				FBE5D2A21CF3569C00459691 /* Document.xcdatamodeld */,
+			);
+			path = CarLot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBE5D2971CF3569C00459691 /* CarLot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE5D2AD1CF3569C00459691 /* Build configuration list for PBXNativeTarget "CarLot" */;
+			buildPhases = (
+				FBE5D2941CF3569C00459691 /* Sources */,
+				FBE5D2951CF3569C00459691 /* Frameworks */,
+				FBE5D2961CF3569C00459691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarLot;
+			productName = CarLot;
+			productReference = FBE5D2981CF3569C00459691 /* CarLot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBE5D2901CF3569C00459691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Vest;
+				TargetAttributes = {
+					FBE5D2971CF3569C00459691 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FBE5D2931CF3569C00459691 /* Build configuration list for PBXProject "CarLot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBE5D28F1CF3569C00459691;
+			productRefGroup = FBE5D2991CF3569C00459691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBE5D2971CF3569C00459691 /* CarLot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBE5D2961CF3569C00459691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE5D2A61CF3569C00459691 /* Assets.xcassets in Resources */,
+				FBE5D2A11CF3569C00459691 /* Document.xib in Resources */,
+				FBE5D2A91CF3569C00459691 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBE5D2941CF3569C00459691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE5D2A41CF3569C00459691 /* Document.xcdatamodeld in Sources */,
+				FBE5D29E1CF3569C00459691 /* Document.swift in Sources */,
+				FBE5D29C1CF3569C00459691 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBE5D29F1CF3569C00459691 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE5D2A01CF3569C00459691 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		FBE5D2A71CF3569C00459691 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE5D2A81CF3569C00459691 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBE5D2AB1CF3569C00459691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBE5D2AC1CF3569C00459691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBE5D2AE1CF3569C00459691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CarLot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CarLot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBE5D2AF1CF3569C00459691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CarLot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CarLot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBE5D2931CF3569C00459691 /* Build configuration list for PBXProject "CarLot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE5D2AB1CF3569C00459691 /* Debug */,
+				FBE5D2AC1CF3569C00459691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE5D2AD1CF3569C00459691 /* Build configuration list for PBXNativeTarget "CarLot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE5D2AE1CF3569C00459691 /* Debug */,
+				FBE5D2AF1CF3569C00459691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBE5D2A21CF3569C00459691 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBE5D2A31CF3569C00459691 /* Document.xcdatamodel */,
+			);
+			currentVersion = FBE5D2A31CF3569C00459691 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBE5D2901CF3569C00459691 /* Project object */;
+}
