@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Document" customModule="RaiseMan" customModuleProvider="target">
             <connections>
+                <outlet property="arrayController" destination="ste-dU-et9" id="Zza-95-L3L"/>
+                <outlet property="tableView" destination="kMK-L1-6kC" id="vl3-Z0-M0b"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -144,7 +146,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="add:" target="ste-dU-et9" id="sH1-Bb-RI4"/>
+                            <action selector="addEmployee:" target="-2" id="2Rv-2k-gEK"/>
                             <binding destination="ste-dU-et9" name="enabled" keyPath="canAdd" id="mNF-7d-LsT"/>
                         </connections>
                     </button>
