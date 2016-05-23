@@ -151,7 +151,6 @@ class Document: NSDocument, NSWindowDelegate {
         undo.prepareWithInvocationTarget(object!).setValue(oldValue, forKeyPath: keyPath!)
     }
     
-
     func windowWillClose(notification: NSNotification) {
         employees=[]
     }
