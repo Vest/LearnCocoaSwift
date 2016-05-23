@@ -13,6 +13,7 @@ class Employee: NSObject, NSCoding {
     var raise: Float = 0.05
     
     override init() {
+        super.init()
     }
     
     func validateRaise(raiseNumberPointer: AutoreleasingUnsafeMutablePointer<NSNumber?>, error outError: NSErrorPointer) -> Bool {
