@@ -13,6 +13,7 @@
 		FBAF37A01CCFA6CC0063EC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAF379F1CCFA6CC0063EC5B /* Assets.xcassets */; };
 		FBAF37A31CCFA6CC0063EC5B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAF37A11CCFA6CC0063EC5B /* MainMenu.xib */; };
 		FBAF37AB1CCFA9760063EC5B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF37AA1CCFA9760063EC5B /* Employee.swift */; };
+		FBE5D28E1CF34EF700459691 /* txt.icns in Resources */ = {isa = PBXBuildFile; fileRef = FBE5D28D1CF34EF700459691 /* txt.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FBAF37A21CCFA6CC0063EC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FBAF37A41CCFA6CC0063EC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBAF37AA1CCFA9760063EC5B /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		FBE5D28D1CF34EF700459691 /* txt.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = txt.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FBAF37A11CCFA6CC0063EC5B /* MainMenu.xib */,
 				FBAF37A41CCFA6CC0063EC5B /* Info.plist */,
 				FBAF37AA1CCFA9760063EC5B /* Employee.swift */,
+				FBE5D28D1CF34EF700459691 /* txt.icns */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				FBAF37A01CCFA6CC0063EC5B /* Assets.xcassets in Resources */,
 				FBAF379E1CCFA6CC0063EC5B /* Document.xib in Resources */,
 				FBAF37A31CCFA6CC0063EC5B /* MainMenu.xib in Resources */,
+				FBE5D28E1CF34EF700459691 /* txt.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +295,7 @@
 				FBAF37A91CCFA6CC0063EC5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

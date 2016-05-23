@@ -79,6 +79,8 @@ class Document: NSDocument, NSWindowDelegate {
     override func dataOfType(typeName: String) throws -> NSData {
         // Insert code here to write your document to data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning nil.
         // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
+        tableView.window?.endEditingFor(nil)
+        
         return NSKeyedArchiver.archivedDataWithRootObject(employees)
     }
     
@@ -86,7 +88,8 @@ class Document: NSDocument, NSWindowDelegate {
         // Insert code here to read your document from the given data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning false.
         // You can also choose to override readFromFileWrapper:ofType:error: or readFromURL:ofType:error: instead.
         // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
-        print("read???")
+        print("About to read data of type \(typeName).")
+        employees = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Employee]
     }
     
     func insertObject(employee: Employee, inEmployeesAtIndex index: Int) {
