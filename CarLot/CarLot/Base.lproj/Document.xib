@@ -56,6 +56,9 @@
                                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rmv-IT-jg1">
                                                             <rect key="frame" x="3" y="0.0" width="17" height="17"/>
                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="HoL-sR-sst"/>
+                                                            <connections>
+                                                                <binding destination="3Zq-OP-2wi" name="value" keyPath="objectValue.photo" id="luJ-Dg-8v6"/>
+                                                            </connections>
                                                         </imageView>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOh-oH-rMz">
                                                             <rect key="frame" x="25" y="0.0" width="105" height="17"/>
@@ -64,6 +67,10 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="3Zq-OP-2wi" name="fontBold" keyPath="objectValue.onSpecial" id="Lvm-nH-QfU"/>
+                                                                <binding destination="3Zq-OP-2wi" name="value" keyPath="objectValue.makeModel" id="1qM-Jp-Cca"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -98,6 +105,10 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="Pwl-vm-XtG" name="fontBold" keyPath="objectValue.onSpecial" id="Cjy-fP-Wgv"/>
+                                                                <binding destination="Pwl-vm-XtG" name="value" keyPath="objectValue.price" id="8ki-zO-DRR"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -129,12 +140,19 @@
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
+                                                            <connections>
+                                                                <binding destination="jBD-59-phq" name="value" keyPath="objectValue.onSpecial" id="o5R-rC-9zY"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
                                     </tableColumns>
+                                    <connections>
+                                        <binding destination="Zqz-Rf-3gF" name="content" keyPath="arrangedObjects" id="fTA-fH-ejA"/>
+                                        <binding destination="Zqz-Rf-3gF" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="fTA-fH-ejA" id="LSQ-zH-G87"/>
+                                    </connections>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -158,6 +176,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="add:" target="Zqz-Rf-3gF" id="tsb-SE-Cb6"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-Vr-pYC">
                         <rect key="frame" x="331" y="247" width="81" height="32"/>
@@ -165,6 +186,10 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="remove:" target="Zqz-Rf-3gF" id="QnI-yN-zBu"/>
+                            <binding destination="Zqz-Rf-3gF" name="enabled" keyPath="canRemove" id="XBA-F6-VKd"/>
+                        </connections>
                     </button>
                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="yDK-hB-yar">
                         <rect key="frame" x="17" y="16" width="473" height="218"/>
@@ -191,6 +216,9 @@
                                 <levelIndicator verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vmo-ls-x7d">
                                     <rect key="frame" x="130" y="136" width="106" height="13"/>
                                     <levelIndicatorCell key="cell" editable="YES" alignment="left" doubleValue="2" maxValue="5" warningValue="2" criticalValue="2" levelIndicatorStyle="rating" id="wFk-Nc-GbY"/>
+                                    <connections>
+                                        <binding destination="Zqz-Rf-3gF" name="value" keyPath="selection.condition" id="okW-Vh-3bp"/>
+                                    </connections>
                                 </levelIndicator>
                                 <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYV-7c-6Cu">
                                     <rect key="frame" x="130" y="159" width="109" height="27"/>
@@ -203,15 +231,34 @@
                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     </datePickerCell>
+                                    <connections>
+                                        <binding destination="Zqz-Rf-3gF" name="value" keyPath="selection.datePurchased" id="czf-Tm-e95"/>
+                                    </connections>
                                 </datePicker>
                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ntk-8G-bOs">
-                                    <rect key="frame" x="244" y="0.0" width="227" height="202"/>
+                                    <rect key="frame" x="241" y="-3" width="233" height="208"/>
                                     <imageCell key="cell" selectable="YES" editable="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="1df-Bk-uLx"/>
+                                    <connections>
+                                        <binding destination="Zqz-Rf-3gF" name="value" keyPath="selection.photo" id="pbi-k7-nkV">
+                                            <dictionary key="options">
+                                                <bool key="NSConditionallySetsEditable" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
                                 </imageView>
                             </subviews>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <binding destination="Zqz-Rf-3gF" name="displayPatternTitle1" keyPath="selection.makeModel" id="PGe-zK-L7T">
+                                <dictionary key="options">
+                                    <string key="NSDisplayPattern">Details for %{title1}@</string>
+                                    <string key="NSNoSelectionPlaceholder">&lt;no selection&gt;</string>
+                                    <string key="NSNullPlaceholder">&lt;no Make/Model&gt;</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
                     </box>
                 </subviews>
             </view>
@@ -220,7 +267,7 @@
             </connections>
             <point key="canvasLocation" x="215.5" y="369"/>
         </window>
-        <arrayController mode="entity" automaticallyPreparesContent="YES" id="Zqz-Rf-3gF" userLabel="Cars">
+        <arrayController mode="entity" entityName="Car" automaticallyPreparesContent="YES" id="Zqz-Rf-3gF" userLabel="Cars">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="T28-lQ-F7d"/>
             </connections>
