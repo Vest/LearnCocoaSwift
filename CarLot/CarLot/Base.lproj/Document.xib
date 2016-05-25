@@ -177,7 +177,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="add:" target="Zqz-Rf-3gF" id="tsb-SE-Cb6"/>
+                            <action selector="addCar:" target="Zqz-Rf-3gF" id="XX0-0d-gdj"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-Vr-pYC">
@@ -267,9 +267,11 @@
             </connections>
             <point key="canvasLocation" x="215.5" y="369"/>
         </window>
-        <arrayController mode="entity" entityName="Car" automaticallyPreparesContent="YES" id="Zqz-Rf-3gF" userLabel="Cars">
+        <arrayController mode="entity" entityName="Car" automaticallyPreparesContent="YES" id="Zqz-Rf-3gF" userLabel="Cars" customClass="CarArrayController" customModule="CarLot" customModuleProvider="target">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="T28-lQ-F7d"/>
+                <outlet property="tableView" destination="t7c-jC-7xc" id="7qq-EU-tAm"/>
+                <outlet property="window" destination="xOd-HO-29H" id="Rk3-Du-UyG"/>
             </connections>
         </arrayController>
     </objects>

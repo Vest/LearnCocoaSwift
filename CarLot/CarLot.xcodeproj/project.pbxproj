@@ -13,6 +13,7 @@
 		FBE5D2A41CF3569C00459691 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE5D2A21CF3569C00459691 /* Document.xcdatamodeld */; };
 		FBE5D2A61CF3569C00459691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE5D2A51CF3569C00459691 /* Assets.xcassets */; };
 		FBE5D2A91CF3569C00459691 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE5D2A71CF3569C00459691 /* MainMenu.xib */; };
+		FBE5D2B11CF59C6200459691 /* CarArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE5D2B01CF59C6200459691 /* CarArrayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FBE5D2A51CF3569C00459691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE5D2A81CF3569C00459691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FBE5D2AA1CF3569C00459691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE5D2B01CF59C6200459691 /* CarArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarArrayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FBE5D29B1CF3569C00459691 /* AppDelegate.swift */,
 				FBE5D29D1CF3569C00459691 /* Document.swift */,
 				FBE5D29F1CF3569C00459691 /* Document.xib */,
+				FBE5D2B01CF59C6200459691 /* CarArrayController.swift */,
 				FBE5D2A51CF3569C00459691 /* Assets.xcassets */,
 				FBE5D2A71CF3569C00459691 /* MainMenu.xib */,
 				FBE5D2AA1CF3569C00459691 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE5D2B11CF59C6200459691 /* CarArrayController.swift in Sources */,
 				FBE5D2A41CF3569C00459691 /* Document.xcdatamodeld in Sources */,
 				FBE5D29E1CF3569C00459691 /* Document.swift in Sources */,
 				FBE5D29C1CF3569C00459691 /* AppDelegate.swift in Sources */,
