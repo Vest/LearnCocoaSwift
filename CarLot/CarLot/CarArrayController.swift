@@ -22,7 +22,6 @@ class CarArrayController: NSArrayController {
         return newObj;
     }
     
-    
     @IBAction func addCar(sender: AnyObject) {
         print("Add new car")
         
