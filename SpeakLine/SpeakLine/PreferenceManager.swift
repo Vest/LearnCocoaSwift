@@ -11,6 +11,9 @@ import Cocoa
 private let activeVoiceKey = "activeVoice"
 private let activeTextKey = "activeText"
 
+private let defaultVoice = NSSpeechSynthesizer.defaultVoice()
+private let defaultText = "Able was I ere I saw Elba."
+
 class PreferenceManager {
     private let userDefaults = NSUserDefaults.standardUserDefaults()
 
@@ -19,8 +22,8 @@ class PreferenceManager {
     }
 
     func registerDefaultPreferences() {
-        let defaults = [ activeVoiceKey : NSSpeechSynthesizer.defaultVoice(),
-                         activeTextKey  : "Able was I ere I saw Elba."]
+        let defaults = [ activeVoiceKey : defaultVoice,
+                         activeTextKey  : defaultText ]
         userDefaults.registerDefaults(defaults)
     }
 
@@ -42,5 +45,10 @@ class PreferenceManager {
             userDefaults.setObject(newActiveText, forKey: activeTextKey)
             print("Set default voice: \(newActiveText)")
         }
+    }
+
+    func resetUserDefaults () {
+        activeVoice = defaultVoice
+        activeText = defaultText
     }
 }

@@ -9,7 +9,7 @@
 import Cocoa
 
 class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate, NSTableViewDataSource, NSTableViewDelegate, NSTextFieldDelegate {
-    
+
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var speakButton: NSButton!
     @IBOutlet weak var stopButton: NSButton!
@@ -19,17 +19,17 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
 
     let speechSynth = NSSpeechSynthesizer()
     let voices = NSSpeechSynthesizer.availableVoices()
-    
+
     var isStarted: Bool = false {
         didSet {
             updateButtons()
         }
     }
-    
+
     override var windowNibName: String? {
         return "MainWindowController"
     }
-    
+
     override func windowDidLoad() {
         super.windowDidLoad()
         updateButtons()
@@ -38,7 +38,7 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         for voice in voices {
             print(voiceNameForIdentifier(voice))
         }
-        
+
         let defaultVoice = preferenceManager.activeVoice!
         if let defaultRow = voices.indexOf(defaultVoice) {
             let indexes = NSIndexSet(index: defaultRow)
@@ -47,7 +47,7 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         }
         textField.stringValue = preferenceManager.activeText!
     }
-    
+
     @IBAction func speakIt(sender: NSButton) {
         let string = textField.stringValue
         if string.isEmpty {
@@ -58,12 +58,19 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
             isStarted = true
         }
     }
-    
+
     @IBAction func stopIt(sender: NSButton) {
         print("stop button cliecked")
         speechSynth.stopSpeaking()
     }
-    
+
+    @IBAction func resetDefaults(sender: NSButton) {
+        print("reset user defaults")
+        preferenceManager.resetUserDefaults()
+
+        windowDidLoad()
+    }
+
     func updateButtons() {
         if isStarted {
             speakButton.enabled = false
@@ -73,35 +80,35 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
             speakButton.enabled = true
         }
     }
-    
+
     func speechSynthesizer(sender: NSSpeechSynthesizer, didFinishSpeaking finishedSpeaking: Bool) {
         isStarted = false
         print("finishSpeaking=\(finishedSpeaking)")
     }
-    
+
     func windowShouldClose(sender: AnyObject) -> Bool {
         return !isStarted
     }
-    
+
     func voiceNameForIdentifier(identifier: String) -> String {
         let attributes = NSSpeechSynthesizer.attributesForVoice(identifier)
         return attributes[NSVoiceName] as! String
     }
-    
+
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
         return voices.count
     }
-    
+
     func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
         let voice = voices[row]
         let voiceName = voiceNameForIdentifier(voice)
-        
+
         return voiceName
     }
-    
+
     func tableViewSelectionDidChange(notification: NSNotification) {
         let row = tableView.selectedRow
-        
+
         if row == -1 {
             speechSynth.setVoice(nil)
             return
