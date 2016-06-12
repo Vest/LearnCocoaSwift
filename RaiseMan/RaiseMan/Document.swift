@@ -54,12 +54,18 @@ class Document: NSDocument, NSWindowDelegate {
         alert.messageText = "Do you really want to remove these people?"
         alert.informativeText = "\(selectedPeople.count) people will be removed."
         alert.addButtonWithTitle("Remove")
+        alert.addButtonWithTitle("Keep, but no raise")
         alert.addButtonWithTitle("Cancel")
         let window = sender.window!
         alert.beginSheetModalForWindow(window) { (response) -> Void in
             switch response {
             case NSAlertFirstButtonReturn:
                 self.arrayController.remove(nil)
+            case NSAlertSecondButtonReturn:
+                for employee in self.arrayController.selectedObjects as! [Employee] {
+                    employee.raise = 0.0
+                }
+                self.arrayController.rearrangeObjects()
             default: break
             }
         }
