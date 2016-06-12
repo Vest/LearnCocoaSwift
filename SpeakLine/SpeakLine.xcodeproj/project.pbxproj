@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB56D3171D0D992500C42C62 /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB56D3161D0D992500C42C62 /* PreferenceManager.swift */; };
 		FB9794821CBEDA0C001906C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9794811CBEDA0C001906C4 /* AppDelegate.swift */; };
 		FB9794841CBEDA0C001906C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9794831CBEDA0C001906C4 /* Assets.xcassets */; };
 		FB9794871CBEDA0C001906C4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB9794851CBEDA0C001906C4 /* MainMenu.xib */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB56D3161D0D992500C42C62 /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 		FB97947E1CBEDA0C001906C4 /* SpeakLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9794811CBEDA0C001906C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FB9794831CBEDA0C001906C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				FB9794881CBEDA0C001906C4 /* Info.plist */,
 				FB97948E1CBEDA5F001906C4 /* MainWindowController.swift */,
 				FB97948F1CBEDA5F001906C4 /* MainWindowController.xib */,
+				FB56D3161D0D992500C42C62 /* PreferenceManager.swift */,
 			);
 			path = SpeakLine;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9794901CBEDA5F001906C4 /* MainWindowController.swift in Sources */,
+				FB56D3171D0D992500C42C62 /* PreferenceManager.swift in Sources */,
 				FB9794821CBEDA0C001906C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
