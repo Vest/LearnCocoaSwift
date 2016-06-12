@@ -30,7 +30,7 @@
                             <rect key="frame" x="1" y="0.0" width="342" height="194"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Ugu-4E-nXu" viewBased="YES" id="kMK-L1-6kC">
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Ugu-4E-nXu" viewBased="YES" id="kMK-L1-6kC">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="171"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
@@ -160,7 +160,7 @@ CA
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="remove:" target="ste-dU-et9" id="eLi-3g-rhH"/>
+                            <action selector="removeEmployees:" target="-2" id="DTy-Uc-98w"/>
                             <binding destination="ste-dU-et9" name="enabled" keyPath="canRemove" id="LKK-Lw-leu"/>
                         </connections>
                     </button>
