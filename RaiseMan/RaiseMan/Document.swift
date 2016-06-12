@@ -52,7 +52,12 @@ class Document: NSDocument, NSWindowDelegate {
         let selectedPeople: [Employee] = arrayController.selectedObjects as! [Employee]
         let alert = NSAlert()
         alert.messageText = "Do you really want to remove these people?"
-        alert.informativeText = "\(selectedPeople.count) people will be removed."
+
+        if (selectedPeople.count == 1) {
+            alert.informativeText = "Do you want to remove " + selectedPeople.first!.name!
+        } else {
+            alert.informativeText = "\(selectedPeople.count) people will be removed."
+        }
         alert.addButtonWithTitle("Remove")
         alert.addButtonWithTitle("Keep, but no raise")
         alert.addButtonWithTitle("Cancel")
